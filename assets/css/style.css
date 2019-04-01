@@ -1,0 +1,65 @@
+ body {
+    font-family: cursive;
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+    background-color: salmon;
+    color: white;
+    margin: 15px;
+    padding: 20px 5px 20px 5px;
+    width: fit-content;
+    
+}
+
+#instructionsP {
+    background-color: blue;
+    padding: 20px 20px 50px 20px;
+    margin: 15px;
+}
+
+
+#numberBox {
+    background-color: turquoise;
+    font-size: 30px;
+    margin: 0px 15px 15px 15px;
+    padding: 5px 20px 60px 5px;
+    
+
+}
+
+#winsBox {
+    background-color: rgba(219, 205, 12);
+    font-size: 15px;
+    padding: 10px 5px 10px 5px;
+    margin-right: 10px;
+}
+/*
+#row1 {
+    background: rgba(50, 34, 190, 0.74);
+    
+    color: white;
+    margin-left: -133px;
+    padding: 25px 30px;
+}
+
+p { 
+    font-size: 20px;
+   
+}
+
+#numberBox {
+    background-color: green;
+    font-size: 30px;
+    /* margin-left: -148px; */
+    /* margin-top: 5px; */
+    /* padding: 10px 50px 40px 10px;  */
+/* }
+
+#winsBox {
+    background-color: teal;
+} */ 
