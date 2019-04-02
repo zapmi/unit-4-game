@@ -51,8 +51,7 @@ h1 {
 }
 
 #redGemButton {
-    background-image: url("/assets/images/redGem.png");
-    
+    /* background-image: url("/assets/images/redGem.png"); */
     /* background-size: cover; */
     height: 100px;
     width: 100px;
@@ -67,28 +66,3 @@ h1 {
 
 }
 
-/*
-#row1 {
-    background: rgba(50, 34, 190, 0.74);
-    
-    color: white;
-    margin-left: -133px;
-    padding: 25px 30px;
-}
-
-p { 
-    font-size: 20px;
-   
-}
-
-#numberBox {
-    background-color: green;
-    font-size: 30px;
-    /* margin-left: -148px; */
-    /* margin-top: 5px; */
-    /* padding: 10px 50px 40px 10px;  */
-/* }
-
-#winsBox {
-    background-color: teal;
-} */ 

@@ -1,10 +1,10 @@
 $(function() {
 
-var randomNumber = "";
+var randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
 
 // When page is loaded random number is generated 19-120
-document.getElementById("numberBox").innerHTML =
-Math.floor(Math.random() * (120 - 19)) + 19;
+$("#numberBox").text(randomNumber);
+
  
 //Generate random numbers for each gem 1-12-2ndL- WORKS******
 var redGem = Math.floor(Math.random() * 12 + 1);
@@ -18,6 +18,10 @@ console.log(goldGem);
 
 var greenGem = Math.floor(Math.random() * 12 + 1);
 console.log(greenGem);
+
+$("#redGemButton").click(function(){
+    $("p1").append(Math.floor(Math.random() * 12 + 1));
+  });
 
 
 
