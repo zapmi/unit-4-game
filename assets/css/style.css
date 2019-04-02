@@ -10,7 +10,7 @@ h1 {
     font-weight: bold;
     background-color: salmon;
     color: white;
-    margin: 10px 10px 0px 14px;
+    margin: 10px 10px 0px 20px;
     padding: 20px 5px 20px 5px;
     width: fit-content;
     
@@ -20,7 +20,7 @@ h1 {
     background-color: blue;
     font-family: monospace;
     font-size: 17px;
-    margin: 15px;
+    margin: 20px;
     padding: 20px 20px 50px 20px;
     
 }
@@ -29,7 +29,7 @@ h1 {
 #numberBox, #currScore {
     background-color: turquoise;
     font-size: 30px;
-    margin: 0px 15px 15px 15px;
+    margin: 0px 15px 15px 20px;
     padding: 5px 20px 60px 5px;
     
 
@@ -44,16 +44,27 @@ h1 {
 }
 
 #scorePrompt {
+    background-color: maroon;
     font-size: 20px;
     padding: 5px;
-    margin: 10px;
+    margin: 20px;
 }
 
 #redGemButton {
-    background-image: url(/assets/images/redGem.png);
-    background-size: cover;
+    /* background-image: url(/assets/images/redGem.png); */
+    
+    /* background-size: cover; */
+    /* height: 100px; */
+    /* width: 100px; */
+    /* margin: 0px 0px 0px 5px; */
+    /* font-size:0; */
+    /* text-indent:-9999px; */
+}
+
+.GEMS {
     height: 100px;
     width: 100px;
+
 }
 
 
