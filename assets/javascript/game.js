@@ -1,7 +1,6 @@
 $(function() {
 
 var randomNumber = "";
-var redNumber = "";
 
 // When page is loaded random number is generated 19-120
 document.getElementById("numberBox").innerHTML =
@@ -19,6 +18,8 @@ console.log(goldGem);
 
 var greenGem = Math.floor(Math.random() * 12 + 1);
 console.log(greenGem);
+
+
 
 
 
