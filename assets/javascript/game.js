@@ -20,8 +20,27 @@ var greenGem = Math.floor(Math.random() * 12 + 1);
 console.log(greenGem);
 
 $("#redGemButton").click(function(){
-    $("p1").append(Math.floor(Math.random() * 12 + 1));
+    $("p1").append(redGem);
   });
+
+  $("#blueGemButton").click(function(){
+    $("p1").append(blueGem);
+  });
+
+  $("#goldGemButton").click(function(){
+    $("p1").append(goldGem);
+  });
+
+  $("#greenGemButton").click(function(){
+    $("p1").append(greenGem);
+  });
+
+//   function startGame(){
+// wins = 0;
+//   }
+
+//   startGame();
+
 
 
 

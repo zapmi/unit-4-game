@@ -50,9 +50,17 @@ h1 {
     margin: 20px;
 }
 
-#redGemButton {
-    /* background-image: url("/assets/images/redGem.png"); */
+#button {
+    border-radius: 200px;
+    border: 0;
+    padding: 0;
+
+}
+
+#redGemButton, #blueGemButton, #goldGemButton, #greenGemButton {
+    /* background-image: url("../assets/images/redGem.png"); */
     /* background-size: cover; */
+    /* border-radius: 10px; */
     height: 100px;
     width: 100px;
     /* margin: 0px 0px 0px 5px; */
