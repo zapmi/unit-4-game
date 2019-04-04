@@ -1,113 +1,89 @@
-$(function() {
+$(function () {
 
-var randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
+  var randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
+  var userScore = 0;
+  var wins = 0;
+  var loss = 0;
 
-// When page is loaded random number is generated 19-120
-$("#numberBox").text(randomNumber);
+  // When page is loaded random number is generated 19-120
+  $("#numberBox").text(randomNumber);
 
- 
-//Generate random numbers for each gem 1-12-2ndL- WORKS******
-var redGem = Math.floor(Math.random() * 12 + 1);
-console.log(redGem);
+  // Displays current wins and losses
+  $("#userScore").text(userScore);
+  $("#wins").text("Wins: " + wins);
+  $("#loss").text("Losses: " + loss);
 
-var blueGem = Math.floor(Math.random() * 12 + 1);
-console.log(blueGem);
 
-var goldGem = Math.floor(Math.random() * 12 + 1);
-console.log(goldGem);
+  //Generate random numbers for each gem 1-12-2ndL- WORKS******
+  var redGem = Math.floor(Math.random() * 12 + 1);
+  console.log(redGem);
 
-var greenGem = Math.floor(Math.random() * 12 + 1);
-console.log(greenGem);
+  var blueGem = Math.floor(Math.random() * 12 + 1);
+  console.log(blueGem);
 
-$("#redGemButton").click(function(){
-    $("p1").append(redGem);
+  var goldGem = Math.floor(Math.random() * 12 + 1);
+  console.log(goldGem);
+
+  var greenGem = Math.floor(Math.random() * 12 + 1);
+  console.log(greenGem);
+
+
+  // on click, sets userscore to gem that is cicked
+  $("#redGemButton").click(function () {
+      userScore += redGem;
+      $("#userScore").text(userScore);
+      startGame();
   });
 
-  $("#blueGemButton").click(function(){
-    $("p1").append(blueGem);
+  $("#blueGemButton").click(function () {
+      userScore += blueGem;
+      $("#userScore").text(userScore);
+      startGame();
   });
 
-  $("#goldGemButton").click(function(){
-    $("p1").append(goldGem);
+  $("#goldGemButton").click(function () {
+      userScore += goldGem;
+      $("#userScore").text(userScore);
+      startGame();
   });
 
-  $("#greenGemButton").click(function(){
-    $("p1").append(greenGem);
+  $("#greenGemButton").click(function () {
+      userScore += greenGem;
+      $("#userScore").text(userScore);
+      startGame();
   });
 
-//   function startGame(){
-// wins = 0;
-//   }
+  function startGame() {
+      if (userScore === randomNumber) {
+          wins++;
+          $("#wins").text("Wins: " + wins);
+          resetGame();
+      }
+      else if (randomNumber < userScore) {
+          loss++;
+          $("#loss").text("Losses: " + loss);
+          resetGame();
+      }
+  }
 
-//   startGame();
-
-
-
-
-
-
-// document.getElementById("blueGemButton").innerHTML =
-// Math.floor(Math.random() * (13 - 1)) + 1;
-
-// document.getElementById("goldGemButton").innerHTML =
-// Math.floor(Math.random() * (13 - 1)) + 1;
-
-// document.getElementById("greenGemButton").innerHTML =
-// Math.floor(Math.random() * (13 - 1)) + 1;
-
-//************************************************************************** */
-
-
-// var firstNumber = "";
-// var secondNumber = "";
-// var operator = "";
-// // var result = "";
-// var gemVal1 = Math.floor(Math.random() * (12 - 1)) + 1;
+  function resetGame() {
+      userScore = 0;
+      randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
+      redGem = Math.floor(Math.random() * 12 + 1);
+      blueGem = Math.floor(Math.random() * 12 + 1);
+      goldGem = Math.floor(Math.random() * 12 + 1);
+      greenGem = Math.floor(Math.random() * 12 + 1);
 
 
-// $(".number").on("click", function(){
-//   console.log($(this).val());
-//   if(!operator){
-//     firstNumber += $(this).val();
-//     console.log("First Number: ", firstNumber)
-//     $("#first-number").text(firstNumber);
-//   }else {
-//     secondNumber += $(this).val();
-//     console.log("second Number: ", secondNumber)
-//     $("#second-number").text(secondNumber);
-
-//   }
-// })
+      $("#numberBox").text(randomNumber);
+      $("#userScore").text(userScore);
+      $("#wins").text("Wins: " + wins);
+      $("#loss").text("Losses: " + loss);
 
 
 
 
-
-
-
-//****************************************************************************** */
-// function randomNumber() {
-//     var min = 1;
-//     var max = 12;
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-
-// document.getElementById("redGemButton").value = randomNumber();
-
-
-
-
-// console.log($(this).val());
-
-
-
-
-
-
-
-
-
-
+  }
 
 
 });

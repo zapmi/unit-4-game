@@ -1,4 +1,4 @@
- body {
+body {
     font-family: cursive;
     background-image: url(../images/background.jpg);
     background-size: 100%;
@@ -36,8 +36,10 @@ h1 {
 }
 
 #winsBox {
-    background-color: rgb(219, 205, 12);
-    font-size: 15px;
+    background-color: salmon;
+    color: blue;
+    font-size: 20px;
+    font-weight: bolder;
     margin-right: 10px;
     margin-bottom: 15px;
     padding: 10px 5px 0px 5px;
@@ -73,4 +75,3 @@ h1 {
     width: 100px;
 
 }
-
