@@ -30,57 +30,55 @@ $(function () {
 
   // on click, sets userscore to gem that is cicked
   $("#redGemButton").click(function () {
-      userScore += redGem;
-      $("#userScore").text(userScore);
-      startGame();
+    userScore += redGem;
+    $("#userScore").text(userScore);
+    startGame();
   });
 
   $("#blueGemButton").click(function () {
-      userScore += blueGem;
-      $("#userScore").text(userScore);
-      startGame();
+    userScore += blueGem;
+    $("#userScore").text(userScore);
+    startGame();
   });
 
   $("#goldGemButton").click(function () {
-      userScore += goldGem;
-      $("#userScore").text(userScore);
-      startGame();
+    userScore += goldGem;
+    $("#userScore").text(userScore);
+    startGame();
   });
 
   $("#greenGemButton").click(function () {
-      userScore += greenGem;
-      $("#userScore").text(userScore);
-      startGame();
+    userScore += greenGem;
+    $("#userScore").text(userScore);
+    startGame();
   });
 
   function startGame() {
-      if (userScore === randomNumber) {
-          wins++;
-          $("#wins").text("Wins: " + wins);
-          resetGame();
-      }
-      else if (randomNumber < userScore) {
-          loss++;
-          $("#loss").text("Losses: " + loss);
-          resetGame();
-      }
+    if (userScore === randomNumber) {
+      wins++;
+      $("#wins").text("Wins: " + wins);
+      resetGame();
+    }
+    else if (randomNumber < userScore) {
+      loss++;
+      $("#loss").text("Losses: " + loss);
+      resetGame();
+    }
   }
 
   function resetGame() {
-      userScore = 0;
-      randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
-      redGem = Math.floor(Math.random() * 12 + 1);
-      blueGem = Math.floor(Math.random() * 12 + 1);
-      goldGem = Math.floor(Math.random() * 12 + 1);
-      greenGem = Math.floor(Math.random() * 12 + 1);
+    userScore = 0;
+    randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
+    redGem = Math.floor(Math.random() * 12 + 1);
+    blueGem = Math.floor(Math.random() * 12 + 1);
+    goldGem = Math.floor(Math.random() * 12 + 1);
+    greenGem = Math.floor(Math.random() * 12 + 1);
 
 
-      $("#numberBox").text(randomNumber);
-      $("#userScore").text(userScore);
-      $("#wins").text("Wins: " + wins);
-      $("#loss").text("Losses: " + loss);
-
-
+    $("#numberBox").text(randomNumber);
+    $("#userScore").text(userScore);
+    $("#wins").text("Wins: " + wins);
+    $("#loss").text("Losses: " + loss);
 
 
   }

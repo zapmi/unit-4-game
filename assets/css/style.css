@@ -13,7 +13,6 @@ h1 {
     margin: 10px 10px 0px 20px;
     padding: 0px 5px 12px 5px;
     width: fit-content;
-    
 }
 
 p2 {
@@ -27,20 +26,15 @@ p2 {
     font-size: 17px;
     margin: 20px;
     padding: 20px 20px 50px 20px;
-    
 }
 
-
 #numberBox, #currScore {
-    /* color: darkslateblue; */
     background-color: turquoise;
-    font-family: 'Cloister Black BT', arial; 
+    font-family: 'Cloister Black BT', arial;
     font-size: 50px;
     font-weight: bold;
     margin: 0px 15px 15px 20px;
     padding: 5px 20px 60px 5px;
-    
-
 }
 
 #winsBox {
@@ -64,22 +58,14 @@ p2 {
     border-radius: 200px;
     border: 0;
     padding: 0;
-
 }
 
 #redGemButton, #blueGemButton, #goldGemButton, #greenGemButton {
-    /* background-image: url("../assets/images/redGem.png"); */
-    /* background-size: cover; */
-    /* border-radius: 10px; */
     height: 100px;
     width: 100px;
-    /* margin: 0px 0px 0px 5px; */
-    /* font-size:0; */
-    /* text-indent:-9999px; */
 }
 
 .GEMS {
     height: 100px;
     width: 100px;
-
 }
