@@ -27,7 +27,6 @@ $(function () {
   var greenGem = Math.floor(Math.random() * 12 + 1);
   console.log(greenGem);
 
-
   // on click, sets userscore to gem that is cicked
   $("#redGemButton").click(function () {
     userScore += redGem;

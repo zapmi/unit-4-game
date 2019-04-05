@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "oldEnglish";
+    src: url("../fonts/oldEnglish.ttf") format("woff"), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/oldEnglish.ttf") format('truetype');  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 body {
     font-family: cursive;
     background-image: url(../images/background.jpg);
@@ -12,13 +18,13 @@ h1 {
     font-weight: bold;
     background-color: salmon;
     color: ghostwhite;
-    margin: 10px 10px 0px 20px;
-    padding: 0px 5px 12px 5px;
+    margin: 15px 0px 5px 20px;
+    padding: 10px 5px 9px 5px;
     width: fit-content;
 }
 
 p2 {
-    font-family: 'Cloister Black BT', arial;
+    font-family: oldEnglish;
     font-size: 70px;
 }
 
@@ -32,7 +38,7 @@ p2 {
 
 #numberBox, #currScore {
     background-color: turquoise;
-    font-family: 'Cloister Black BT', arial;
+    font-family: oldEnglish;
     font-size: 50px;
     font-weight: bold;
     margin: 0px 15px 15px 20px;
